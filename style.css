@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .blackBackground {
+  height: 50vh;
+  width: 100%;
+  background-color: rgb(40, 39, 39);
+}
+body article {
+  width: 90%;
+  height: 65vh;
+  background-color: rgb(227, 235, 241);
+  position: absolute;
+  display: flex;
+  margin-top: 300px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 32px 77px -33px rgba(0, 0, 0, 0.75);
+}
+body article .upperDiv {
+  background-color: rgb(227, 235, 241);
+  width: 100%;
+  height: 40%;
+  border-bottom: 1px solid black;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+}
+body article .upperDiv img {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 6px solid white;
+  position: relative;
+  top: 50px;
+}
+body article .lowerDiv {
+  text-align: center;
+  padding-top: 60px;
+  cursor: default;
+}
+body article .lowerDiv p {
+  font-size: 1.2em;
+}
+body article .lowerDiv h2 {
+  font-size: 2em;
+  font-weight: 1;
+  margin-top: 5px;
+}
+body article .lowerDiv .buttonContainer {
+  margin: 10px;
+  cursor: default;
+}
+body article .lowerDiv .buttonContainer button {
+  margin: 0px 10px;
+  font-size: 1.7em;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: rgb(77, 196, 239);
+  transition: 0.3s;
+}
+body article .lowerDiv .buttonContainer button:hover {
+  color: rgb(7, 121, 163);
+}
+body article .lowerDiv .randomButton {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 7px;
+  padding: 6px;
+  color: white;
+  background-color: rgb(135, 179, 222);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body article .lowerDiv .randomButton:hover {
+  background-color: rgb(28, 142, 255);
+}
+@media (min-width: 800px) {
+  body article {
+    width: 700px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .blackBackground{
+        height:50vh;
+        width:100%;
+        background-color: rgb(40, 39, 39);
+    }
+    article{
+        width: 90%;
+        height: 65vh;
+        background-color:rgb(227, 235, 241);
+        position: absolute;
+        display: flex;
+        margin-top: 300px;
+        flex-direction: column;
+        align-items: center;
+        border-radius:10px;
+        -webkit-box-shadow: 0px 32px 77px -33px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 32px 77px -33px rgba(0,0,0,0.75);
+box-shadow: 0px 32px 77px -33px rgba(0,0,0,0.75);
+        //z-index: 2;
+
+
+        .upperDiv{
+            background-color: rgb(227, 235, 241);
+            width: 100%;
+            height: 40%;
+            border-bottom: 1px solid black;
+            display: flex;
+            position: relative;
+            border-radius: 10px;
+            img{
+                margin: 0 auto;
+                width: 150px;
+                height:150px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 6px solid white;
+                position: relative;
+                top: 50px;
+
+            }  
+
+        }
+        .lowerDiv{
+            text-align: center;
+            padding-top: 60px;
+            cursor: default;
+
+            p{
+                font-size: 1.2em;
+            }
+            h2{
+                font-size:2em;
+                font-weight: 1;
+                margin-top: 5px;
+            }
+            .buttonContainer{
+                margin: 10px;
+                cursor:default;
+
+                button{
+                    margin: 0px 10px;
+                    font-size: 1.7em;
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+                    color: rgb(77, 196, 239);
+                    transition: 0.3s;
+
+                    &:hover{
+                        color: rgb(7, 121, 163);
+                    
+                    }
+                }
+            }
+            .randomButton{
+                font-size: 1em;
+                font-weight: bold;
+                margin-top: 10px;
+                border-radius: 7px;
+                padding: 6px;
+                color: white;
+                background-color: rgb(135, 179, 222);
+                border: none;
+                cursor: pointer;
+                transition: 0.3s;
+                
+                &:hover{
+                    background-color: rgb(28, 142, 255);
+                }
+            }
+        }
+    }
+
+    @media (min-width:800px) {
+        article{
+            width: 700px;
+        }
+    }
+}
