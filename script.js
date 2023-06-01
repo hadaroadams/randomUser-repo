@@ -47,6 +47,9 @@ btns.forEach(async(item)=>{
 })
 
 const show= async()=>{
+    para.innerText="loading..." 
+    h2.innerText="" 
+    picture.src="./Loading_2.gif"
     let data = await url()
     picture.src = data.image
     globalData= data
