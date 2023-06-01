@@ -48,6 +48,7 @@ body article .upperDiv img {
   border: 6px solid white;
   position: relative;
   top: 50px;
+  background-color: transparent;
 }
 body article .lowerDiv {
   text-align: center;
@@ -56,6 +57,7 @@ body article .lowerDiv {
 }
 body article .lowerDiv p {
   font-size: 1.2em;
+  color: rgb(89, 97, 103);
 }
 body article .lowerDiv h2 {
   font-size: 2em;
@@ -67,7 +69,7 @@ body article .lowerDiv .buttonContainer {
   cursor: default;
 }
 body article .lowerDiv .buttonContainer button {
-  margin: 0px 10px;
+  margin: 0px 20px;
   font-size: 1.7em;
   cursor: pointer;
   border: none;
